@@ -1,0 +1,92 @@
+body {
+	background:#000000; 
+	font-family: Trebuchet MS, Arial, sans serif; 
+	padding: 0; 
+	margin: 0;
+}
+
+table {
+	font-family: Trebuchet MS, Arial, sans serif;
+}
+
+td {
+	font-family: Trebuchet MS, Arial, sans serif;
+}
+
+.pink {
+	color: #eb77a6;
+}
+
+.pink-bg {
+	background-color: #eb77a6;	
+}
+
+.pink-border-btm {
+	border-bottom: 2px solid #eb77a6;
+}
+
+.gray-dark-box { 
+	background-color: #333333;
+	color: #c5c5c5;
+}
+
+.gray-pale-box {
+	background-color: #cccccc;
+	color: #666666;
+}
+
+.white-box {
+	background-color: #ffffff;
+	color: #666666;
+}
+
+.plain-box {
+	color: #c5c5c5;	
+}
+
+h1, h2 {
+	color: #eb77a6;
+	margin-top:0;
+	margin-bottom: 5px;
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 18px;	
+}
+
+p.btn {
+	margin-top: 30px;
+}
+
+a.button {
+	padding: 10px;
+	background: #eb77a6;
+	color: #FFF;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.button:hover {
+	background-color: #bf4174;
+}
+
+.subscriber {
+	font-weight: 200;
+	font-size: 12px;
+	color: #888888;
+}
+
+p {
+	margin-top: 0;
+}
+
+em, .gray-dark-box em {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.gray-pale-box em, .white-box em {
+	color: #000000;
+	font-weight: bold;	
+}
