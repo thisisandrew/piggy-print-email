@@ -1,1 +1,3 @@
-# piggy-power-order-email
+# piggy-power-email
+
+Emails for piggy power
