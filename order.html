@@ -1,0 +1,157 @@
+---
+layout: default
+title: Email Preview
+---
+
+		<!-- MEAT -->
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+		    <tr>
+		    	<td align="center" valign="top">
+		            <table border="0" cellpadding="0" cellspacing="0" width="640">
+		                <tr>
+		                    <td align="center" valign="top">
+		                        
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="gray-dark-box">
+		                            <tr>
+		                                <td valign="top">
+											<h1>ORDER #1000000555</h1>
+		                                    
+		                                    <p>
+		                                    	Thank you for your order placed on <em>[[var order.getCreatedAtFormated('long')]]</em>.
+											</p>
+											<p>
+												Once your order ships we will send an email with a link to track your order. Your order summary is below.
+		                                    </p>
+
+		                                    <p>
+		                                    	<em>Thanks again for your business.</em>
+		                                    </p>
+
+		                                    <em><u>[[var order.getEmailCustomerNote()]]</u></em>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="white-box">
+		                        	<tr>
+		                        		<td>
+		                        			<h1>ORDER SUMMARY</h1>
+		                        			
+		                        			<table border="0" cellpadding="10" cellspacing="0" width="100%" class="order-detail">
+		                        				<tr>
+		                        					<th width="75%">Item in Your Order</th>
+		                        					<th width="5%">Qty</th>
+		                        					<th>Price</th>
+		                        				</tr>
+		                        				<tr class="odd-row">
+		                        					<td>DURACELL ULTRA LITHIUM PHOTO BATTERY CR123A CR17345 123 3V LITHIUM BATTERY (01 PACK)</td>
+		                        					<td>1</td>
+		                        					<td>&pound;2.08</td>
+		                        				</tr>
+		                        				<tr class="even-row">
+		                        					<td>DURACELL ULTRA LITHIUM PHOTO BATTERY CR123A CR17345 123 3V LITHIUM BATTERY (04 PACK)</td>
+		                        					<td>1</td>
+		                        					<td>&pound;6.08</td>
+		                        				</tr>
+		                        				<tr class="odd-row">
+		                        					<td>DURACELL ULTRA LITHIUM PHOTO BATTERY CR123A CR17345 123 3V LITHIUM BATTERY (12 PACK)</td>
+		                        					<td>1</td>
+		                        					<td>&pound;12.08</td>
+		                        				</tr>
+		                        			</table>
+		                        			<table border="0" cellpadding="10" cellspacing="0" width="100%" class="order-subtotal">
+		                        				<tr>
+		                        					<td align="right" width="82%">Subtotal</td>
+		                        					<td>&pound;15.68</td>
+		                        				</tr>
+		                        				<tr>
+		                        					<td align="right">Delivery</td>
+		                        					<td>&pound;2.65</td>
+		                        				</tr>
+		                        				<tr>
+		                        					<td align="right">VAT</td>
+		                        					<td>&pound;2.65</td>
+		                        				</tr>
+		                        				<tr>
+		                        					<td align="right"><em>Total</em></td>
+		                        					<td><em>&pound;28.65</em></td>
+		                        				</tr>
+		                        			</table>
+		                        		</td>
+		                        	</tr>
+		                        </table>
+
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
+		                        	<tr>
+		                        		<td width="50%">
+		                        			<h2>BILL TO</h2>
+		                        			<p>
+		                        				<em>Kim McCloskey</em><br />
+												22 Colne View<br />
+												Slaithwaite<br />
+												HUDDERSFIELD, HD7 5ET<br />
+												United Kingdom<br />
+												T: 01484844249<br />
+												M: 07713745112<br />
+		                        			</p>
+		                        		</td>
+		                        		<td width="50%">
+		                        			<h2>SHIP TO</h2>
+		                        			<p>
+		                        				<em>Kim McCloskey</em><br />
+												22 Colne View<br />
+												Slaithwaite<br />
+												HUDDERSFIELD, HD7 5ET<br />
+												United Kingdom<br />
+												T: 01484844249<br />
+												M: 07713745112<br />
+		                        			</p>
+		                        		</td>
+		                        	</tr>
+		                        </table>
+
+		                        <table border="0" cellpadding="10" cellspacing="0" width="100%" class="plain-box">
+		                            <tr>
+		                                <td valign="top">
+		                                	<h2>SHIPPING METHOD</h2>
+		                                    <p>
+		                                    	Select Delivery Method - Standard Delivery (3-5 Days)
+		                                    </p>
+											
+											<h2>PAYMENT METHOD</h2>		                                    
+											<p>
+												Debit or Credit Card
+											</p>
+											<p>
+												Credit/Debit Card Type: <em>Visa</em><br />
+												Credit/Debit Card Number: <em>xxxx-8024</em><br />
+												Payer Email: <em>k.mccloskey3628@gmail.com</em><br />
+											</p>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        
+		                        <table border="0" cellpadding="10" cellspacing="0" width="100%" class="gray-dark-box">
+		                            <tr>
+		                                <td valign="top">
+		                                	<h1>MONEY OFF YOUR NEXT ORDER</h1>
+		                                    <p>
+		                                    	As a thnk you for ordering we'd like to give you this special one-off code for your next purchase.
+		                                    	Use this code at checkout.
+		                                    </p>
+											
+											<p align="center">
+												<em>GGTY-44RF-56TF</em>	
+											</p>
+											<p class="btn" align="center">
+		                        				<a href="http://www.piggypowerbatteries.com/#" target="_blank" class="button">Visit PiggyPower Soon!</a>
+		                        			</p>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		</table>
+		<!-- END MEAT -->
