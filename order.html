@@ -4,7 +4,7 @@ title: Email Preview
 ---
 
 		<!-- MEAT -->
-		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
 		    <tr>
 		    	<td align="center" valign="top">
 		            <table border="0" cellpadding="0" cellspacing="0" width="640">
@@ -27,9 +27,7 @@ title: Email Preview
 		                                    	<em>Thanks again for your business.</em>
 		                                    </p>
 
-		                                    {{if order.getEmailCustomerNote()}}
 		                                    <em><u>{{var order.getEmailCustomerNote()}}</u></em>
-		                                    {{/if}}
 		                                </td>
 		                            </tr>
 		                        </table>
@@ -37,115 +35,10 @@ title: Email Preview
 		                        	<tr>
 		                        		<td class="heading">
 		                        			<h1>ORDER SUMMARY</h1>
-		                        		</td>
-		                        	</tr>
-
-		                        	<tr>
-<td style="font-family: Trebuchet MS, Arial, sans serif;">
-            <table class="items" cellpadding="0" cellspacing="0" border="0" style="font-family: Trebuchet MS, Arial, sans serif;">
-<thead><tr>
-<th class="cell-name">
-                                                            Items in your order                                                    </th>
-                        <th class="cell-name align-center">
-                            Qty                        </th>
-                        <th class="cell-name align-right">
-                            Price                        </th>
-                    </tr></thead>
-<tbody><tr>
-<td class="cell-content product-info" style="font-family: Trebuchet MS, Arial, sans serif;">
-        <p class="product-name" style="margin-top: 0;">Duracell Original 9V MN1604 6LR61 PP3 Battery (10 bulk pack tub)</p>
-        <p class="sku" style="margin-top: 0;">SKU: 9VDURB10T</p>
-                                                                                                            </td>
-            <td class="cell-content align-center" style="font-family: Trebuchet MS, Arial, sans serif;">1</td>
-            <td class="cell-content align-right" style="font-family: Trebuchet MS, Arial, sans serif;">
-                                                                                <span class="price">£10.08</span>                    
-
-                                    
-
-                            </td>
-        </tr></tbody>
-<tbody><tr>
-<td class="cell-content product-info" style="font-family: Trebuchet MS, Arial, sans serif;">
-        <p class="product-name" style="margin-top: 0;">Duracell Multi Battery Charger AA/AAA/C/D/9V For NiMH Batteries (Not Included)</p>
-        <p class="sku" style="margin-top: 0;">SKU: DURCEF22</p>
-                                                                                                            </td>
-            <td class="cell-content align-center" style="font-family: Trebuchet MS, Arial, sans serif;">1</td>
-            <td class="cell-content align-right" style="font-family: Trebuchet MS, Arial, sans serif;">
-                                                                                <span class="price">£15.39</span>                    
-
-                                    
-
-                            </td>
-        </tr></tbody>
-<tbody><tr>
-<td class="cell-content product-info" style="font-family: Trebuchet MS, Arial, sans serif;">
-        <p class="product-name" style="margin-top: 0;">Duracell Specialty Battery LRV08 MN21 VR22 12V Alkaline Battery (02 pack)</p>
-        <p class="sku" style="margin-top: 0;">SKU: MN21B2</p>
-                                                                                                            </td>
-            <td class="cell-content align-center" style="font-family: Trebuchet MS, Arial, sans serif;">2</td>
-            <td class="cell-content align-right" style="font-family: Trebuchet MS, Arial, sans serif;">
-                                                                                <span class="price">£3.32</span>                    
-
-                                    
-
-                            </td>
-        </tr></tbody>
-<tbody><tr>
-<td class="cell-content product-info" style="font-family: Trebuchet MS, Arial, sans serif;">
-        <p class="product-name" style="margin-top: 0;">Duracell Rechargeable Batteries D LR20 MN1300 (2200 Mah) 1.2V (1.5V) NiMH Battery (02 Pack)</p>
-        <p class="sku" style="margin-top: 0;">SKU: DURHR20B2</p>
-                                                                                                            </td>
-            <td class="cell-content align-center" style="font-family: Trebuchet MS, Arial, sans serif;">2</td>
-            <td class="cell-content align-right" style="font-family: Trebuchet MS, Arial, sans serif;">
-                                                                                <span class="price">£14.98</span>                    
-
-                                    
-
-                            </td>
-        </tr></tbody>
-</table>
-</td>
-    </tr>
-<tr>
-<td style="font-family: Trebuchet MS, Arial, sans serif;">
-            <table class="table-totals" cellpadding="0" cellspacing="0" border="0" style="font-family: Trebuchet MS, Arial, sans serif;"><tbody><tr>
-<td class="padding-totals" style="font-family: Trebuchet MS, Arial, sans serif;">
-            <table cellpadding="0" cellspacing="0" border="0" style="font-family: Trebuchet MS, Arial, sans serif;">
-<tbody><tr class="subtotal">
-<td colspan="3" align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        Subtotal                    </td>
-        <td align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        <span class="price">£43.77</span>                    </td>
-    </tr>
-<tr class="shipping">
-<td colspan="3" align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        Delivery                    </td>
-        <td align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        <span class="price">£2.49</span>                    </td>
-    </tr>
-<tr>
-<td colspan="3" align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                    VAT            </td>
-    <td align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;"><span class="price">£9.25</span></td>
-</tr>
-<tr class="grand_total">
-<td colspan="3" align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        <strong>Grand Total</strong>
-                    </td>
-        <td align="right" style="padding: 3px 9px; font-family: Trebuchet MS, Arial, sans serif;">
-                        <strong><span class="price">£55.51</span></strong>
-                    </td>
-    </tr>
-</tbody></table>
-</td>
-    </tr></tbody></table>
-</td>
-    </tr>
-
-		                        			
-		                        			
-		                        		</td>
-		                        	</tr>
+                                                        </td>
+                                                 </tr>
+                                                
+                                                 {{layout handle="sales_email_order_items" order=$order}}	
 		                        </table>
 
 		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
@@ -153,26 +46,16 @@ title: Email Preview
 		                        		<td width="50%">
 		                        			<h2>BILL TO</h2>
 		                        			<p>
-		                        				<em>Kim McCloskey</em><br />
-												22 Colne View<br />
-												Slaithwaite<br />
-												HUDDERSFIELD, HD7 5ET<br />
-												United Kingdom<br />
-												T: 01484844249<br />
-												M: 07713745112<br />
+		                        				{{var order.getBillingAddress().format('html')}}
 		                        			</p>
 		                        		</td>
 		                        		<td width="50%">
+                                                                {{depend order.getIsNotVirtual()}}
 		                        			<h2>SHIP TO</h2>
 		                        			<p>
-		                        				<em>Kim McCloskey</em><br />
-												22 Colne View<br />
-												Slaithwaite<br />
-												HUDDERSFIELD, HD7 5ET<br />
-												United Kingdom<br />
-												T: 01484844249<br />
-												M: 07713745112<br />
+		                        				{{var order.getShippingAddress().format('html')}}
 		                        			</p>
+                                                                {{/depend}}
 		                        		</td>
 		                        	</tr>
 		                        </table>
@@ -182,18 +65,14 @@ title: Email Preview
 		                                <td valign="top">
 		                                	<h2>SHIPPING METHOD</h2>
 		                                    <p>
-		                                    	Select Delivery Method - Standard Delivery (3-5 Days)
+		                                    	{{var order.shipping_description}}
 		                                    </p>
 											
 											<h2>PAYMENT METHOD</h2>		                                    
 											<p>
-												Debit or Credit Card
+												{{var payment_html}}
 											</p>
-											<p>
-												Credit/Debit Card Type: <em>Visa</em><br />
-												Credit/Debit Card Number: <em>xxxx-8024</em><br />
-												Payer Email: <em>k.mccloskey3628@gmail.com</em><br />
-											</p>
+											
 		                                </td>
 		                            </tr>
 		                        </table>
@@ -204,7 +83,7 @@ title: Email Preview
 		                                	<h1>MONEY OFF YOUR NEXT ORDER</h1>
 		                                    <p>
 		                                    	As a thank you for ordering we'd like to give you this special one-off code for your next purchase.
-		                                    	Use this code at checkout.
+		                                    	Use this code at checkout to get <em>5% off</em>.
 		                                    </p>
 											
 											<p align="center">

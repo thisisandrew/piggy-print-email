@@ -115,6 +115,10 @@ table#order-summary tr:nth-child(0n+3) > td {
 	padding: 10px 20px 20px 20px;
 }
 
+table#order-summary table {
+	width: 100% !important;
+}
+
 table.order-detail th,
 table.items th,
 table.order-detail td, 

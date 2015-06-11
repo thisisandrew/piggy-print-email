@@ -43,17 +43,19 @@ title: Email Preview
 		                        		</td>
 		                        	</tr>
 
-		                        	{{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
-											                        		
-		                        </table>
+		                        	<tr>
+		                        		<td>
+		                        			{{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+		                        		</td>
+		                        	</tr>
 
-								<table border="0" cellpadding="10" cellspacing="0" width="100%" class="plain-box">
-									<tr>
+		                        	<tr>
 										<td>
 										{{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
 										</td>
 									</tr>
-								</table>
+		                        </table>
+
 
 		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
 		                        	<tr>
@@ -95,18 +97,29 @@ title: Email Preview
 		                            <tr>
 		                                <td valign="top">
 		                                	<h1>YOUR FEEDBACK COUNTS</h1>
+
 		                                    <p>
-		                                    	Our business is built on out reputation so we welcome your feedback to help us improve our service and provide the best bettery website around.
+		                                    	Our business is built on our reputation, that is why we welcome your feedback to help us improve our service and achieve our aim to provide the best battery website around.
 		                                    </p>
 											
 											<p>
-												Once you receive your delivery we will send an email from our feddback partner Ekomi. PLease take the time to offer us your feedback and we will be very grateful.
+												Once you receive your delivery we will send an email from our feedback partner Ekomi. If you could please take a couple of minutes of your time to offer us your feedback, we would be very grateful.
 											</p>
 											<p class="btn" align="center">
 		                        				<a href="http://www.piggypowerbatteries.com/#" target="_blank" class="button">Visit PiggyPower Soon!</a>
 		                        			</p>
 		                                </td>
 		                            </tr>
+		                            <tr>
+		                        		<td>
+		                        			<p align="center">Checkout the feedback we've had so far. </p>
+		                        			<p align="center">
+		                        				<a href="https://www.ekomi.co.uk/review-piggypowerbatteriescom.html">
+		                        					<img src="http://www.piggypowerbatteries.com/media/email/ekomi/logo/Ekomi.png" width="60%" />
+		                        				</a>
+		                        			</p>
+		                        		</td>
+		                        	</tr>
 		                        </table>
 		                    </td>
 		                </tr>
