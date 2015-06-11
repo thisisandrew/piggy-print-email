@@ -1,0 +1,117 @@
+---
+layout: default
+title: Email Preview
+---
+
+<!-- MEAT -->
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+		    <tr>
+		    	<td align="center" valign="top">
+		            <table border="0" cellpadding="0" cellspacing="0" width="640">
+		                <tr>
+		                    <td align="center" valign="top">
+		                        
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="gray-dark-box">
+		                            <tr>
+		                                <td valign="top">
+											<h1>Thank you for your order from {{var store.getFrontendName()}}.</h1>
+		                                    
+		                                    <p>You can check the status of your order by <a href="{{store url="customer/account/"}}">logging into your account</a>.
+		                                    </p>
+											
+		                                    <p>
+		                                    	<em>Thanks again for your business.</em>
+		                                    </p>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="white-box" id="order-summary">
+		                        	<tr>
+		                        		<td class="heading">
+		                        			<h1>SHIPMENT SUMMARY</h1>
+
+	                        				Your Shipment <span class="no-link">#{{var shipment.increment_id}}</span> for 
+            								Order <span class="no-link">#{{var order.increment_id}}</span>.
+
+		                        			{{if comment}}
+								            <table cellspacing="0" cellpadding="0" class="message-container">
+								                <tr>
+								                    <td>{{var comment}}</td>
+								                </tr>
+								            </table>
+								            {{/if}}
+		                        		</td>
+		                        	</tr>
+
+		                        	{{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+											                        		
+		                        </table>
+
+								<table border="0" cellpadding="10" cellspacing="0" width="100%" class="plain-box">
+									<tr>
+										<td>
+										{{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
+										</td>
+									</tr>
+								</table>
+
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
+		                        	<tr>
+		                        		<td width="50%">
+		                        			<h2>BILL TO</h2>
+		                        			<p>
+		                        				{{var order.getBillingAddress().format('html')}}
+		                        			</p>
+		                        		</td>
+		                        		<td width="50%">
+                                            {{depend order.getIsNotVirtual()}}
+		                        			<h2>SHIP TO</h2>
+		                        			<p>
+		                        				{{var order.getShippingAddress().format('html')}}
+		                        			</p>
+                                            {{/depend}}
+		                        		</td>
+		                        	</tr>
+		                        </table>
+
+		                        <table border="0" cellpadding="10" cellspacing="0" width="100%" class="plain-box">
+		                            <tr>
+		                                <td valign="top">
+		                                	<h2>SHIPPING METHOD</h2>
+		                                    <p>
+		                                    	{{var order.shipping_description}}
+		                                    </p>
+											
+											<h2>PAYMENT METHOD</h2>		                                    
+											<p>
+												{{var payment_html}}
+											</p>
+											
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        
+		                        <table border="0" cellpadding="10" cellspacing="0" width="100%" class="gray-dark-box">
+		                            <tr>
+		                                <td valign="top">
+		                                	<h1>YOUR FEEDBACK COUNTS</h1>
+		                                    <p>
+		                                    	Our business is built on out reputation so we welcome your feedback to help us improve our service and provide the best bettery website around.
+		                                    </p>
+											
+											<p>
+												Once you receive your delivery we will send an email from our feddback partner Ekomi. PLease take the time to offer us your feedback and we will be very grateful.
+											</p>
+											<p class="btn" align="center">
+		                        				<a href="http://www.piggypowerbatteries.com/#" target="_blank" class="button">Visit PiggyPower Soon!</a>
+		                        			</p>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		</table>
+		<!-- END MEAT -->
