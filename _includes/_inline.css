@@ -121,20 +121,24 @@ table#order-summary table {
 
 table.order-detail th,
 table.items th,
+.track table th,
 table.order-detail td, 
-table.items td {
+table.items td,
+.track table td {
 	padding: 10px;
 }
 
 table.order-detail th, 
-table.items th {
+table.items th,
+.track table th {
 	text-align: left;
 	background: #eb77a6;
 	color: #ffffff;
 }
 
 table.order-detail td, 
-table.items td {
+table.items td,
+.track table td {
 	font-size: 13px;
 }
 
@@ -158,7 +162,6 @@ table.table-totals td {
 
 table.table-totals table tr.subtotal td:nth-child(0n+1) {
 	width: 86% !important;
-	background: #000000;
 }
 
 table.table-totals table td:nth-child(0n+2) {
