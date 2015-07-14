@@ -1,0 +1,133 @@
+---
+layout: pdf
+title: Email Preview
+---
+
+<!-- WRAPPER -->
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="left" valign="top">
+            <!-- MASTER -->
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="master" valign="top">
+	                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 212mm">
+	                    	<td valign="top">
+
+	                    		<!-- LOGO BAR -->
+		                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 25mm;">
+		                            <tr>
+		                                <td align="center" valign="top" class="pink-border-btm">
+		                                    <img
+		                                        width="70%"
+		                                        src="{{var logo_url}}"
+		                                        alt="{{var logo_alt}}"
+		                                        border="0"/>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        <!-- END LOGO BAR -->
+		                    
+
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="white-box">
+		                            <tr>
+		                                <td valign="top"  width="50%">
+											<h1>INVOICE #{{var invoice.increment_id}}</h1>
+											<h2>ORDER #{{var order.increment_id}}</h2>
+		                                    
+		                                </td>
+                                                <td width="50%" valign="top">
+		                                    <p>
+		                                    	Order Date: <em>{{var order.getCreatedAtFormated('long')}}</em>
+											</p>
+											
+		                                    <p>
+		                                    	<em>Thanks again for your business.</em>
+		                                    </p>
+		                                </td>
+		                            </tr>
+		                        </table>
+
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="white-box" id="order-summary">
+		                        	<tr>
+		                        		<td class="heading">
+		                        			<h2>ORDER SUMMARY</h2>
+		                                        </td>
+		                                </tr>
+		                            <tr>
+		                            	<td>
+                                                        <!-- sales_email_order_invoice_item -->
+		                            		{{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+                                                        <!-- end sales_email_order_invoice_items -->
+		                            	</td>
+		                            </tr>
+		                        </table>
+
+		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box">
+		                            <tr>
+		                                <td valign="top" width="50%" class="method">
+		                                	<h2>SHIPPING METHOD</h2>
+		                                        {{var order.shipping_description}}
+		                                </td>
+		                                <td valign="top" width="50%" class="method">
+							<h2>PAYMENT METHOD</h2>		                                    
+							{{var payment_html}}
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        
+		                		<!-- END MEAT -->
+		                		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="white-box pink-border-top">
+		                			<tr>
+		                				<td valign="top" align="center">
+		                					piggyPrint Ltd. | PO Box 110, Huddersfield, West Yorkshire. HD7 9AS
+		                				</td>
+		                			</tr>
+		                		</table>
+                    		</td>
+                    	</table>
+
+                    	
+
+                		<!-- PERFORATED -->
+                		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-box" style="height: 85mm; border-top: 1px dashed #ddd">
+                			<tr>
+                				<td style="padding-top: 8mm; padding-bottom: 23mm">
+                					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                						<!-- LEFT MARGIN -->
+                						<td class="sticker margin">
+                						</td>
+
+                						<td align="left" valign="top" class="sticker">
+                							<div style="margin: 5mm;">
+                							Ship To:<br />
+                							{{var order.getShippingAddress().format('html')}}
+                							</div>
+                						</td>
+
+                						<!-- MIDDLE GUTTER -->
+                						<td>
+                						</td>
+
+                						<td align="left" valign="top" class="sticker">
+                							<div style="margin: 5mm;">
+                							Bill To:<br />
+		                        			{{var order.getBillingAddress().format('html')}}
+		                        			</div>
+                						</td>
+
+                						<!-- RIGHT MARGIN -->
+                						<td class="sticker margin">
+                						</td>
+                					</table>
+                				</td>
+                			</tr>
+                		</table>
+                    </td>
+                </tr>
+            </table>
+            <!-- END MASTER -->
+        </td>
+    </tr>
+</table>
+<!-- END WRAPPER -->

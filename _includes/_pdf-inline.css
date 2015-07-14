@@ -1,0 +1,225 @@
+body {
+	background: ffffff; 
+	font-family: Trebuchet MS, Arial, sans serif; 
+	padding: 0; 
+	margin: 0;
+}
+
+.master {
+	width: 210mm;
+	height: 297mm;
+	background: #ffffff;
+}
+
+.master-width {
+	width: 210mm;
+}
+
+.master-height {
+	height: 297mm;
+}
+
+table {
+	font-family: Trebuchet MS, Arial, sans serif;
+}
+
+td {
+	font-family: Trebuchet MS, Arial, sans serif;
+}
+
+.pink {
+	color: #eb77a6;
+}
+
+.pink-dark {
+	color: #bf4174;
+}
+
+.pink-bg {
+	background-color: #eb77a6;	
+}
+
+.pink-border-btm {
+	border-bottom: 2px solid #eb77a6;
+}
+
+.pink-border-top {
+	border-top: 2px solid #eb77a6;
+}
+
+.gray-dark-box { 
+	background-color: #333333;
+	color: #c5c5c5;
+}
+
+.gray-pale-box {
+	background-color: #cccccc;
+	color: #666666;
+}
+
+.white-box {
+	background-color: #ffffff;
+	color: #666666;
+}
+
+.plain-box {
+	color: #c5c5c5;	
+}
+
+h1, h2 {
+	color: #eb77a6;
+	margin-top:0;
+	margin-bottom: 5px;
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 18px;	
+}
+
+p.btn {
+	margin-top: 30px;
+}
+
+a.button {
+	padding: 10px;
+	background: #eb77a6;
+	color: #FFF;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a.button:hover {
+	background-color: #bf4174;
+}
+
+.footer {
+	font-size: 12px;
+}
+
+.subscriber {
+	font-weight: 200;
+	color: #888888;
+}
+
+a {
+	color: #eb77a6;
+}
+
+p {
+	margin-top: 0;
+}
+
+em, .gray-dark-box em {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.gray-pale-box em, .white-box em {
+	color: #000000;
+	font-weight: bold;	
+}
+
+table#order-summary td.heading {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+table#order-summary tr:nth-child(0n+2) > td {
+	padding: 0 20px;
+}
+
+table#order-summary tr:nth-child(0n+3) > td {
+	padding: 10px 20px 20px 20px;
+}
+
+table#order-summary table {
+	width: 100% !important;
+}
+
+table.order-detail th,
+table.items th,
+.track table th,
+table.order-detail td, 
+table.items td,
+.track table td {
+	padding: 5px;
+}
+
+table.order-detail th, 
+table.items th,
+.track table th {
+	text-align: left;
+	background: #eb77a6;
+	color: #ffffff;
+}
+
+table.order-detail td, 
+table.items td,
+.track table td {
+	font-size: 13px;
+}
+
+table.items td p, {
+	margin-bottom: 3px;
+}
+
+table.order-detail tbody:nth-child(2n+1) tr,
+table.items tbody:nth-child(2n+1) tr {
+	background: #efefef;
+}
+
+table.order-subtotal, 
+table.table-totals, 
+table.order-subtotal table, 
+table.table-totals table
+{
+	width: 100%;
+}
+
+table.order-subtotal td, 
+table.table-totals td {
+	font-size: 13px;
+}
+
+table.table-totals table tr.subtotal td:nth-child(0n+1) {
+	width: 86% !important;
+}
+
+table.table-totals table td:nth-child(0n+2) {
+	text-align: left !important;
+	padding-left: 20px !important;
+}
+
+table.table-totals tr.grand_total td {
+	font-weight: bold;
+	font-style: italic;
+	color: #000000;
+}
+
+table td.method {
+	font-size: 13px;
+}
+
+table td.method p {
+	margin-bottom: 3px;
+}
+
+table td.method dl {
+	margin: 3px 0;
+}
+
+table td.method dt,
+table td.method dd {
+	display: inline-block;
+}
+
+.sticker {
+	width: 85mm;
+	height: 54mm;
+}
+
+.sticker.margin {
+	width: 20mm;
+}
