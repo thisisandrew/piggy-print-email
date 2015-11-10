@@ -1,5 +1,5 @@
 body {
-	background:#000000; 
+	background:#FFF; 
 	font-family: Trebuchet MS, Arial, sans serif; 
 	padding: 0; 
 	margin: 0;
@@ -14,29 +14,29 @@ td {
 }
 
 .pink {
-	color: #eb77a6;
+	color: #f7a8aa;
 }
 
 .pink-dark {
-	color: #bf4174;
+	color: #f7a8aa;
 }
 
 .pink-bg {
-	background-color: #eb77a6;	
+	background-color: #f7a8aa;	
 }
 
 .pink-border-btm {
-	border-bottom: 2px solid #eb77a6;
+	border-bottom: 2px solid #f7a8aa;
 }
 
 .gray-dark-box { 
-	background-color: #333333;
-	color: #c5c5c5;
+	background-color: #e5e5e5;
+	color: #1d1d1d;
 }
 
 .gray-pale-box {
-	background-color: #cccccc;
-	color: #666666;
+	background-color: #f6f6f6;
+	color: #1d1d1d;
 }
 
 .white-box {
@@ -49,7 +49,7 @@ td {
 }
 
 h1, h2 {
-	color: #eb77a6;
+	color: #f7a8aa;
 	margin-top:0;
 	margin-bottom: 5px;
 	font-size: 26px;
@@ -65,7 +65,7 @@ p.btn {
 
 a.button {
 	padding: 10px;
-	background: #eb77a6;
+	background: #f7a8aa;
 	color: #FFF;
 	font-size: 16px;
 	text-decoration: none;
@@ -73,7 +73,7 @@ a.button {
 }
 
 a.button:hover {
-	background-color: #bf4174;
+	background-color: #cb8384;
 }
 
 .footer {
@@ -86,7 +86,7 @@ a.button:hover {
 }
 
 a {
-	color: #eb77a6;
+	color: #f7a8aa;
 }
 
 p {
@@ -94,7 +94,7 @@ p {
 }
 
 em, .gray-dark-box em {
-	color: #ffffff;
+	color: #000;
 	font-weight: bold;
 }
 
@@ -132,7 +132,7 @@ table.order-detail th,
 table.items th,
 .track table th {
 	text-align: left;
-	background: #eb77a6;
+	background: #f7a8aa;
 	color: #ffffff;
 }
 
